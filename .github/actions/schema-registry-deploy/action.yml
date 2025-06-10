@@ -11,7 +11,7 @@ jobs:
       - name: Deploy to Schema Registry
         uses: Saurav0310/Schema/.github/actions/schema-registry-deploy@main
         with:
-          schema-dir: 'your/schemas/path'
+          schema-dir: 'kafka/schemas'
           registry-url: ${{ secrets.SCHEMA_REGISTRY_URL }}
           api-key: ${{ secrets.SCHEMA_REGISTRY_API_KEY }}
           api-secret: ${{ secrets.SCHEMA_REGISTRY_API_SECRET }}
